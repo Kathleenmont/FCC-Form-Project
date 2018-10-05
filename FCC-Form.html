@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="style.css" rel="stylesheet" type="text/css">
+  <title>Adoption Form</title>
+</head>
+<body>
+  <header>
+    <h1 id="title">Pet Adoption Survey</h1>
+    <p id="discription">Let us know a little about what kind of pet you're looking to adopt</p>
+  </header>
+  <main>
+    <div id="personal-information">
+    <h2>Personal Infromation</h2>
+    <form id="survey-form" action="kathleen.m.montesano@gmail.com">
+  <label class="Question" id="name-label">*Name:</label> <input id="name" type="text" required placeholder="Enter your full name"/><br><br>
+  <label class="Question" id="email-label">*Email:</label> <input id="email" type="email" required placeholder="Enter your email address"/><br><br>
+  <label class="Question" id="number-label"for="number-label">*Phone Number:</label> <input id="number" type="number" min="1111111111" max="9999999999" required placeholder="Enter your Phone Number"/><br><br>
+  <label class="Question">*Date of Birth:<label> <input type="date" required placeholder="MM/DD/YYYY"/><br><br>
+    </div>
+    <div id="pet-information">
+    <h2>Pet Information</h2>
+      <label class="Question">Type of Pet:</label><br><br>
+      <select id="dropdown" id="Pet-Type">
+        <option value="cat">Cat</option>
+        <option value="dog">Dog</option>
+      </select><br><br><br>
+      <label class="Question">Age of Pet:</label><br><br>
+      <div class="answer" class="age-answer">
+      <label for="Puppy/Kitten">
+        <input id="Puppy/Kitten" type="checkbox" value="puppy/kitten" Name="Age"/>Puppy/Kitten
+      </label><br>
+      <label for="Young">
+        <input id="Young" type="checkbox" value="Young" Name="Age"/>Young
+      </label><br>
+      <label for="Adult">
+        <input id="Adult" type="checkbox" value="Adult" Name="Age"/>Adult
+      </label><br>
+      <label for="Senior">
+        <input id="Senior" type="checkbox" value="Senior" Name="Age"/>Senior
+      </label>
+      </div><br><br><br>
+
+      <label class="Question">Gender of Pet:</label><br><br>
+      <div class="gender-answer" class="answer">
+      <label for="Any">
+        <input id="Any" type="radio" name="Gender" checked/>Any
+      </label><br>
+      <label for="Female">
+        <input id="Female" type="radio" name="Gender"/>Female
+      </label><br>
+      <label for="Male">
+        <input id="Male" type="radio" name="Gender"/>Male
+      </label>
+      </div><br><br><br>
+
+      <label class="Question">Pet Traits:</label><br><br>
+      <div class="answer" class="traits-answer">
+      <label for="House-Trained/Litter-Trained">
+        <input id="House-Trained/Litter-Trained" type="checkbox" value="House-trained/litter-trained" Name="Traits"/>House-Trained/Litter-Trained
+      </label><br>
+      <label for="Good-With-Children">
+        <input id="Good-With-Children" type="checkbox" value="good-with-children" Name="Traits"/>Good With Children
+      </label><br>
+      <label for="Good-With-Cats">
+        <input id="Good-With-Cats" type="checkbox" value="good-with-cats" Name="Traits"/>Good With Cats
+      </label><br>
+      <label for="Good-With-Dogs">
+        <input id="Good-With-Dogs" type="checkbox" value="good-with-dogs" Name="Traits"/>Good With Dogs
+      </label><br>
+      <label for="Small">
+        <input id="Small" type="checkbox" value="small" Name="Traits"/>Small
+      </label><br>
+      <label for="Medium">
+        <input id="Medium" type="checkbox" value="medium" Name="Traits"/>Medium
+      </label><br>
+      <label for="Large">
+        <input id="Large" type="checkbox" value="large" Name="Traits"/>Large
+      </label><br>
+      <label for="Short-Hair">
+        <input id="Short-Haired" type="checkbox" value="short-haired" Name="Traits"/>Short-Haired
+      </label><br>
+      <label for="Long-Hair">
+        <input id="Long-Haired" type="checkbox" value="long-haired" Name="Traits"/>Long-Haired
+      </label><br><br>
+      <label class="Question" for="additional">Any additional information:</label><br><br>
+      <textarea id="additional"></textarea>
+      </div><br><br><br>
+    </div>
+
+<button type="submit">Submit</button>
+</form>
+  </main>
+</body>
+</html>
